@@ -1,0 +1,67 @@
+Windows net Command Cheat Sheet
+
+1. Viewing & Modifying Services:
+
+    net start: Lists all running services.
+    net start servicename: Starts a specific service.
+    net stop servicename: Stops a specific service.
+    net pause servicename: Pauses a service.
+    net continue servicename: Resumes a paused service.
+
+2. User Management:
+
+    net user: Lists all users.
+    net user username: Displays details about a specific user.
+    net user username password /add: Adds a new user.
+    net user username /delete: Deletes a user.
+
+3. Group Management:
+
+    net group: Lists all groups.
+    net group groupname: Lists users in a group.
+    net localgroup: Lists local groups.
+
+4. View Network Shares & Connections:
+
+    net view: Lists visible computers in your network.
+    net view \\computername: Lists shared resources on a specific computer.
+    net share: Lists all shared resources on the computer.
+    net use: Lists all network connections.
+    net use \\computername\sharename: Connects to a network share.
+    net use Z: \\computername\sharename: Maps a network share to a specific drive letter.
+    net use Z: /delete: Removes a mapped drive.
+    net print: Displays the print queue.
+
+5. Session & Client Management:
+
+    net session: Lists sessions from other computers.
+    net session /delete: Ends all sessions.
+    net config: Lists various network configurations.
+
+6. Network Statistics:
+
+    net statistics: Displays statistics for workstation or server.
+
+Windows netstat Command Cheat Sheet
+
+1. Display Active Connections:
+
+    netstat: Shows all active network connections.
+
+2. Options:
+
+    netstat -a: Lists all active connections and listening ports.
+    netstat -b: Shows the executable involved in creating each connection or listening port.
+    netstat -e: Displays Ethernet statistics.
+    netstat -n: Displays addresses and port numbers in numerical form.
+    netstat -o: Shows the process ID (PID) for each connection.
+    netstat -p protocol: Shows connections for a specified protocol (e.g., TCP, UDP).
+    netstat -r: Displays the routing table.
+    netstat -s: Displays per-protocol statistics.
+    netstat -t: Displays the current connection offload state.
+    netstat -x: Shows NetworkDirect listeners, connections, and shared endpoints.
+
+3. Interval Refresh:
+
+    netstat 5: Refreshes netstat every 5 seconds (replace '5' with desired number of seconds).
+
