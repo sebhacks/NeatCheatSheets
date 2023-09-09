@@ -1,0 +1,75 @@
+Common General Search Filters
+
+- ip: Filter by specific IP address.
+- asn: Filter by specific ASN ID.
+- hostname: Filter by specific hostname.
+- port: Filter by specific service port number.
+- net: Filter from specified CIDR block.
+- isp: Filter by devices with an address from a specified ISP.
+- city: Filter by specific city.
+- country: Filter by two-digit country code.
+- os: Filter by specific OS.
+- product: Filter by specific software.
+- version: Filter by specific software version.
+
+Common Premium API Search Filters
+
+- vuln: Filter by vulnerability ID (often CVE).
+- tag: Filter by device tags.
+
+HTTP Filters
+
+- http.component: Filter by specific web technology.
+- http.status: Filter by specific status code.
+- http.html: Filter by strings in served HTML files.
+- http.title: Filter by title string of served web pages.
+
+Common CLI Commands
+
+- count: Return number of search results.
+- domain: View all info for a domain.
+- download: Save search results in a compressed JSON file.
+- honeyscore: Check if IP is a honeypot.
+- host: View all info for an IP address.
+- parse: Extract info from compressed JSON files.
+- scan: Scan IP/netblock with Shodan.
+- search: Search the Shodan database.
+
+Common CLI Search Fields (Display values but no statistics)
+
+- ip_str
+- port
+- org
+- hostnames
+- os
+- country
+- city
+
+Common CLI Stats Facets (Return statistical info about found devices)
+
+- asn
+- city
+- country
+- cloud.provider
+- cloud.service
+- device
+- domain
+- ip
+- org
+- os
+- version
+
+Use Case Examples
+
+1. Search: host: 8.8.8.8
+	- CLI Command: shodan host 8.8.8.8
+	- Explanation: Display information about Google's public DNS.
+2. Search: asn:15169 product:mysql
+	- CLI Command: shodan stats asn:15169 product:mysql
+	- Explanation: Show devices within Google's ASN running MySQL.
+3. Search: microsoft iis 6.0
+	- CLI Command: shodan search --fields ip_str,port,org,hostnames microsoft iis 6.0
+	- Explanation: Detect IIS servers running version 6.0.
+4. Web UI: Navigate to https://honeyscore.shodan.io/ and enter target IP.
+	- CLI Command: shodan honeyscore [TARGET]
+	- Explanation: Check if the given target is a honeypot.
