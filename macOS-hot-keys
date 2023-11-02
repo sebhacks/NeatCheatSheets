@@ -1,0 +1,45 @@
+General:
+Command (⌘) + Q: Quit the current app.
+Command (⌘) + W: Close the front window.
+Command (⌘) + Option + W: Close all windows of the app.
+Command (⌘) + H: Hide the windows of the current app.
+Command (⌘) + M: Minimize the front window to the Dock.
+Command (⌘) + Tab: Switch to the next most recently used app.
+
+Finder:
+Command (⌘) + N: New Finder window.
+Command (⌘) + Shift + N: New folder.
+Command (⌘) + Shift + A: Go to Applications folder.
+Command (⌘) + Shift + U: Go to Utilities folder.
+Command (⌘) + Shift + D: Go to Desktop.
+Command (⌘) + Shift + K: Go to Network.
+Command (⌘) + [: Go to the previous folder.
+Command (⌘) + ]: Go to the next folder.
+
+Screenshot:
+Command (⌘) + Shift + 3: Capture entire screen.
+Command (⌘) + Shift + 4: Capture dragged area.
+Command (⌘) + Shift + 4, then Spacebar: Capture a window.
+
+System:
+Command (⌘) + Space: Spotlight search.
+Command (⌘) + Option + Esc: Force quit applications.
+Control + Command (⌘) + Power button: Force restart.
+Control + Command (⌘) + Q: Lock screen.
+Command (⌘) + Control + Power button: Turn off Mac.
+Command (⌘) + Shift + Delete: Empty Trash.
+
+Text Editing:
+Command (⌘) + C: Copy selected text/item.
+Command (⌘) + X: Cut selected text/item.
+Command (⌘) + V: Paste text/item.
+Command (⌘) + Z: Undo.
+Command (⌘) + Shift + Z: Redo.
+Command (⌘) + A: Select all items.
+Command (⌘) + F: Find in document.
+Command (⌘) + G: Find again (next occurrence).
+
+Miscellaneous:
+Command (⌘) + ,: Open preferences for the current app.
+Option + Command (⌘) + D: Show or hide the Dock.
+Control + Command (⌘) + F: Use app in full-screen mode.
